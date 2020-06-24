@@ -1,0 +1,60 @@
+$specialcolor: olive;
+
+%special {
+    font-family: monospace;
+    font-size: 50px;
+    text-decoration: underline;
+    color: $specialcolor;
+    
+}
+
+#name { 
+    @extend %special;
+    opacity: 0.5;
+}
+
+table {
+    font-size: 20px;
+    
+    th {
+        font-size: 30px;
+
+    }
+    td {
+        font-family: monospace;
+    }
+}
+
+.about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1, li {
+    color: red;
+}
+
+li:hover {
+    color: blue;
+}
+
+h4.about {
+    color: orange;
+}
+
+
+@media (min-width: 500px) {
+    body {
+        background-color: #EEEEEE;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: #E0EEEE;
+    }
+}
+
+.news {
+    text-align: center;
+}
